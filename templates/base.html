@@ -20,16 +20,18 @@
 <body>
 
 <div class="wrapper">
+    <div class="wrapper-content">
+        {% include 'navbar.html' %}
 
-    {% include 'navbar.html' %}
+        {% block content %}
 
-    {% block content %}
+        {% endblock %}
 
-    {% endblock %}
-
-    {% include 'footer.html' %}
-
+    </div>
 </div>
+
+{% include 'footer.html' %}
+
 <!-- jQuery -->
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
